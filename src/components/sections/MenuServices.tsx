@@ -68,7 +68,7 @@ export default function MenuServices({ config, id = "menu" }: MenuServicesProps)
   const filteredItems =
     activeCategory === "All"
       ? items
-      : items.filter((item) => (item as MenuItem).category === activeCategory);
+      : items.filter((item) => (item as MenuItem | Service).category === activeCategory);
 
   return (
     <section id={id} className="py-20 lg:py-28 bg-muted" aria-label="Menu/services section">
