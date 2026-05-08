@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ==============================
+   CSS Custom Properties / Theme
+   ============================== */
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #c8956c;
+  --primary-dark: #a0724d;
+  --secondary: #f5ede4;
+  --accent: #8b5e3c;
+  --muted: #f7f0ea;
+  --muted-foreground: #6b5a4e;
+  --card-bg: #fff8f3;
+  --font-heading: "Georgia, serif";
+  --font-body: "system-ui, sans-serif";
+}
+
+/* ==============================
+   Base Styles
+   ============================== */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* ==============================
+   Smooth Scroll
+   ============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==============================
+   Focus Styles
+   ============================== */
+
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
