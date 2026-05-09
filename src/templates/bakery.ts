@@ -151,7 +151,7 @@ export const bakeryConfig: SiteConfig = {
         alt: "Chocolate layer cake",
       },
       {
-        src: "https://images.unsplash.com/photo-1600353565497-6c5a50d7f5fe?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1558326567-98ae2405596b?w=600&q=80",
         alt: "Colorful macarons",
       },
       {

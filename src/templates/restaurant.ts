@@ -140,7 +140,7 @@ export const restaurantConfig: SiteConfig = {
         alt: "Restaurant interior",
       },
       {
-        src: "https://images.unsplash.com/photo-1551183053-bf91798d765b?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1691688334265-7936fb8c49ba?w=600&q=80",
         alt: "Italian desserts",
       },
       {
