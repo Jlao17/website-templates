@@ -2,23 +2,18 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import type { NavItem, SocialLinks } from "@/config/types";
+import type { NavItem } from "@/config/types";
 
 interface NavbarProps {
   businessName: string;
   logo?: string;
   navItems: NavItem[];
-  socialLinks?: SocialLinks;
-  ctaText?: string;
-  ctaHref?: string;
 }
 
 export default function Navbar({
   businessName,
   logo,
   navItems,
-  ctaText,
-  ctaHref,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +42,7 @@ export default function Navbar({
               // eslint-disable-next-line @next/next/no-img-element
               <img src={logo} alt={businessName} className="h-10 w-auto" />
             ) : (
-              <span className="font-heading text-xl md:text-2xl font-bold text-primary group-hover:text-primary-dark transition-colors">
+              <span className={`font-heading text-xl md:text-2xl font-bold transition-colors ${isScrolled ? "text-primary group-hover:text-primary-dark" : "text-white group-hover:text-white/80"}`}>
                 {businessName}
               </span>
             )}
@@ -59,22 +54,13 @@ export default function Navbar({
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-foreground hover:text-primary hover:bg-primary/5 transition-colors"
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isScrolled ? "text-foreground hover:text-primary hover:bg-primary/5" : "text-white hover:text-primary hover:bg-primary/5"}`}
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
-            {ctaText && ctaHref && (
-              <li className="ml-2">
-                <Link
-                  href={ctaHref}
-                  className="ml-2 px-5 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-colors"
-                >
-                  {ctaText}
-                </Link>
-              </li>
-            )}
+
           </ul>
 
           {/* Mobile Menu Button */}
@@ -109,17 +95,6 @@ export default function Navbar({
                   </Link>
                 </li>
               ))}
-              {ctaText && ctaHref && (
-                <li className="px-6 py-3">
-                  <Link
-                    href={ctaHref}
-                    className="block text-center px-5 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-colors"
-                    onClick={closeMenu}
-                  >
-                    {ctaText}
-                  </Link>
-                </li>
-              )}
             </ul>
           </div>
         )}

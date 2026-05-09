@@ -84,8 +84,8 @@ export default function MenuServices({ config, id = "menu" }: MenuServicesProps)
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
                   activeCategory === cat
-                    ? "bg-primary text-white shadow-sm"
-                    : "bg-white text-muted-foreground hover:bg-primary/10 hover:text-primary border border-secondary"
+                    ? "bg-slate-200 text-primary shadow-sm border border-primary/20"
+                    : "bg-white text-muted-foreground hover:bg-slate-100 hover:text-foreground border border-secondary/70"
                 }`}
               >
                 {cat}

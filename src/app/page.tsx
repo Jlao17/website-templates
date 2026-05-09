@@ -24,21 +24,12 @@ export default function Home() {
     footerTagline,
   } = siteConfig;
 
-  const ctaNavItem = nav.find((item) =>
-    ["book now", "reserve", "contact", "find us"].some((kw) =>
-      item.label.toLowerCase().includes(kw)
-    )
-  );
-
   return (
     <>
       <Navbar
         businessName={businessName}
         logo={logo}
         navItems={nav}
-        socialLinks={socialLinks}
-        ctaText={ctaNavItem?.label}
-        ctaHref={ctaNavItem?.href}
       />
       <main>
         <Hero config={hero} />

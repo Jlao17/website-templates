@@ -53,7 +53,7 @@ export default function Hero({ config, id = "home" }: HeroProps) {
           {subheadline}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href={ctaHref} size="lg" variant="primary">
+          <Button href={ctaHref} size="lg" variant="outline">
             {ctaText}
           </Button>
           {secondaryCtaText && secondaryCtaHref && (

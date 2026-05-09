@@ -17,7 +17,7 @@ const templates: Record<TemplateName, SiteConfig> = {
  * Change this value to switch the active template.
  * Options: "bakery" | "restaurant" | "cafe" | "salon"
  */
-export const ACTIVE_TEMPLATE: TemplateName = "bakery";
+export const ACTIVE_TEMPLATE: TemplateName = "cafe";
 
 export const siteConfig: SiteConfig = templates[ACTIVE_TEMPLATE];
 
