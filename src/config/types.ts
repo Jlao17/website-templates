@@ -118,7 +118,7 @@ export interface SiteConfig {
   tagline: string;
   logo?: string;
   favicon?: string;
-  style?: "default" | "retro" | "dark" | "asian" | "animated" | "trades";
+  style?: "default" | "retro" | "dark" | "asian" | "animated" | "trades" | "japan";
   seo: {
     title: string;
     description: string;

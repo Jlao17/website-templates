@@ -13,6 +13,7 @@ import DarkTemplate from "@/components/templates/DarkTemplate";
 import AsianTemplate from "@/components/templates/AsianTemplate";
 import AnimatedTemplate from "@/components/templates/AnimatedTemplate";
 import TradesTemplate from "@/components/templates/TradeTemplate";
+import JapanTemplate from "@/components/templates/JapanTemplate";
 
 export default function Home() {
   const {
@@ -35,6 +36,7 @@ export default function Home() {
   if (layout === "asian") return <AsianTemplate config={siteConfig} />;
   if (layout === "animated") return <AnimatedTemplate config={siteConfig} />;
   if (layout === "trades") return <TradesTemplate config={siteConfig} />;
+  if (layout === "japan") return <JapanTemplate config={siteConfig} />;
 
   return (
     <>

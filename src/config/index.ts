@@ -7,9 +7,10 @@ import { dinerConfig } from "@/templates/diner";
 import { asianRestaurantConfig } from "@/templates/asianRestaurant";
 import { velvetConfig } from "@/templates/velvet";
 import { ironcladConfig } from "@/templates/trade";
+import { japanConfig } from "@/templates/japan";
 import type { SiteConfig } from "./types";
 
-export type TemplateName = "bakery" | "restaurant" | "cafe" | "salon" | "brewery" | "diner" | "asian" | "velvet" | "trades";
+export type TemplateName = "bakery" | "restaurant" | "cafe" | "salon" | "brewery" | "diner" | "asian" | "velvet" | "trades" | "japan";
 
 const templates: Record<TemplateName, SiteConfig> = {
   bakery: bakeryConfig,
@@ -21,15 +22,16 @@ const templates: Record<TemplateName, SiteConfig> = {
   asian: asianRestaurantConfig,
   velvet: velvetConfig,
   trades: ironcladConfig,
+  japan: japanConfig,
 };
 
 /**
  * Change this value to switch the active template.
- * Options: "bakery" | "restaurant" | "cafe" | "salon" | "brewery" | "diner" | "asian"
+ * Options: "bakery" | "restaurant" | "cafe" | "salon" | "brewery" | "diner" | "asian" | "velvet" | "trades" | "japan"
  */
-export const ACTIVE_TEMPLATE: TemplateName = "trades";
+export const ACTIVE_TEMPLATE: TemplateName = "japan";
 
 export const siteConfig: SiteConfig = templates[ACTIVE_TEMPLATE];
 
-export { bakeryConfig, restaurantConfig, cafeConfig, salonConfig, breweryConfig, dinerConfig, asianRestaurantConfig, velvetConfig, ironcladConfig };
+export { bakeryConfig, restaurantConfig, cafeConfig, salonConfig, breweryConfig, dinerConfig, asianRestaurantConfig, velvetConfig, ironcladConfig, japanConfig };
 export type { SiteConfig } from "./types";
