@@ -8,6 +8,11 @@ import MenuServices from "@/components/sections/MenuServices";
 import Gallery from "@/components/sections/Gallery";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
+import RetroTemplate from "@/components/templates/RetroTemplate";
+import DarkTemplate from "@/components/templates/DarkTemplate";
+import AsianTemplate from "@/components/templates/AsianTemplate";
+import AnimatedTemplate from "@/components/templates/AnimatedTemplate";
+import TradesTemplate from "@/components/templates/TradeTemplate";
 
 export default function Home() {
   const {
@@ -22,7 +27,14 @@ export default function Home() {
     testimonials,
     contact,
     footerTagline,
+    style: layout,
   } = siteConfig;
+
+  if (layout === "retro") return <RetroTemplate config={siteConfig} />;
+  if (layout === "dark") return <DarkTemplate config={siteConfig} />;
+  if (layout === "asian") return <AsianTemplate config={siteConfig} />;
+  if (layout === "animated") return <AnimatedTemplate config={siteConfig} />;
+  if (layout === "trades") return <TradesTemplate config={siteConfig} />;
 
   return (
     <>
