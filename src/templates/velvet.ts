@@ -159,12 +159,12 @@ export const velvetConfig: SiteConfig = {
     subheading: "Sommige dingen zijn beter in persoon beleefd.",
     images: [
       {
-        src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&q=80",
         alt: "Bar 's avonds",
         caption: "De Hoofdbar",
       },
       {
-        src: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=600&q=80",
         alt: "Cocktail bereiding",
         caption: "Bereid met Intentie",
       },
@@ -174,17 +174,17 @@ export const velvetConfig: SiteConfig = {
         caption: "Midnight Garden",
       },
       {
-        src: "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=600&q=80",
-        alt: "Lounge zitplaatsen",
-        caption: "De Fluwelen Kamer",
+        src: "https://images.unsplash.com/photo-1615887023544-3a566f29d822?q=80&w=600",
+        alt: "Whiskey sour cocktail",
+        caption: "Whisky Sour",
       },
       {
-        src: "https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1764146275574-00ec68c1fe9e?q=80&w=600",
         alt: "Cocktail close-up",
         caption: "Gold Rush Sour",
       },
       {
-        src: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&q=80",
+        src: "https://images.unsplash.com/photo-1647776112336-72f4c30fafc1?q=80&w=600",
         alt: "Barman aan het werk",
         caption: "Meestervakmanschap",
       },

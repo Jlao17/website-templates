@@ -139,29 +139,29 @@ export const japanConfig: SiteConfig = {
     subheading: "A glimpse of the moments waiting for you.",
     images: [
       {
-        src: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
+        src: "https://images.unsplash.com/photo-1558862107-d49ef2a04d72?q=80&w=800",
         alt: "Fushimi Inari torii gates, Kyoto",
         caption: "Fushimi Inari, Kyoto",
       },
       {
-        src: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=800&q=80",
+        src: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80",
         alt: "Shibuya crossing at night, Tokyo",
         caption: "Shibuya Crossing, Tokyo",
       },
       {
-        src: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80",
+        src: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=800&q=80",
         alt: "Cherry blossoms in Hokkaido",
         caption: "Cherry Blossoms, Hokkaido",
       },
       {
-        src: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=800&q=80",
+        src: "https://images.unsplash.com/photo-1610375229632-c7158c35a537?w=800&q=80",
         alt: "Mount Fuji reflection in lake",
         caption: "Mount Fuji, Chubu",
       },
       {
-        src: "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=800&q=80",
-        alt: "Traditional Japanese garden",
-        caption: "Japanese Garden, Kansai",
+        src: "https://images.unsplash.com/photo-1732629558099-2f5b913c0885?q=80&w=800",
+        alt: "A herd of deer in Nara Park",
+        caption: "Nara Park, Nara",
       },
       {
         src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",

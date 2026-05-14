@@ -326,7 +326,7 @@ export default function AnimatedTemplate({ config }: { config: SiteConfig }) {
               fontFamily: "var(--font-body)",
             }}
           >
-            Reserve
+            Reserveer
           </a>
         </div>
       </nav>
@@ -1499,7 +1499,7 @@ export default function AnimatedTemplate({ config }: { config: SiteConfig }) {
                       fontFamily: "var(--font-body)",
                     }}
                   >
-                    Make a Reservation
+                    Maak een Reservering
                   </a>
                 </div>
               </div>
